@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .black{
+      position: relative;
+      width: 30px;
+      height: 105px;
+      background: black;
+      margin: auto;
+      top:100px;
+    }
+    .black::before{
+      position:absolute;
+      content: "";
+      width:250px ;
+      height: 100px;
+      background: linear-gradient(white,lightgray,white);
+      border: 1px solid lightgray;
+      right:27px;
+      top:1px;
+      margin: auto;  
+      z-index: -1;
+      
+    }
+    .black::after{
+      position:absolute;
+      background:linear-gradient(#FAFAA7,40% ,lightgray,65%,#FAFAA7 );
+      content: "";
+      width:250px ;
+      height: 100px;
+      border: 1px solid lightgray;
+      left:27px;
+      top:1px;
+      z-index: -1;
+    }
+    .head{
+      background: linear-gradient(white,lightgray,white);
+      position:relative;
+      width: 45px;
+      height: 95px;
+      border: 1px solid lightgray;
+      margin: auto;
+      top:2px;
+      right: 350px;
+      border-radius: 10%;
+    }
+    .head::before{
+      position:absolute;
+      content: "";
+      width: 70px;
+      height: 60px;
+      background: linear-gradient(white,lightgray,white);
+      border: 1px solid lightgray;
+      margin: auto;
+      left: 40px;
+      bottom: 1px;
+      top:1px;
+      border-radius: 10%;
+      z-index: -2;
+    }
+    .head::after{    
+      position:absolute;
+      content: "";
+      width: 45px;
+      height: 60px;
+      background: linear-gradient(white,lightgray,white);
+      border: 1px solid lightgray;
+      margin: auto;
+      left:627px;
+      top:1px;
+      bottom:1px;
+      border-radius: 5%;
+      z-index: -2;
+    }
+    .stin{
+      position:relative;
+      width: 80px;
+      height: 2px;
+      background: darkgray;
+      border: 1px solid lightgray;
+      margin: auto;
+      left: 670px;
+      top:45px;
+      z-index: -3;
+    }
+    .text{
+      position:relative;
+      width:700px;
+      color: silver;
+      font-size:20px;
+      margin:auto;
+      right:-95px;
+      display: block;
+      bottom: 7px;
+      letter-spacing: 3px;
+    }
+    .taiwan{
+      position:relative;
+      width:700px;
+      color: silver;
+      font-size:15px;
+      margin:auto;
+      right:-90px;
+      display: block;
+      top:52px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+  </style>
+</head>
+<body>
+  <div class="black">
+    <div class="head">
+      <div class="stin">
+      </div>
+    </div>
+  </div>
+  <div class="text"> |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |  &ensp;&ensp;&ensp; | |  |  |  |  |  | |  |  |  |  |  |   |   | </div>
+  <div class="taiwan">Made in Taiwan</div>
+</body>
+</html>
